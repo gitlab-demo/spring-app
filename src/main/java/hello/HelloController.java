@@ -8,7 +8,15 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot!";
+        String style = "<style type='text/css' media='screen'>";
+        style += "body { background-color: #6DB23E; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 250%; }";
+        style += "</style>";
+        
+        String message = "Hello Spring Boot!";
+        
+        String body = "<body>" + message + "</body>";
+
+        return style + body;
     }
 
 }
