@@ -12,6 +12,7 @@ public class HelloController {
         style += "body { background-color: #6DB23E; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 250%; }";
         style += "</style>";
         
+        // TODO - Personalize this message
         String message = "Hello from Spring Boot!";
         
         String body = "<body>" + message + "</body>";
